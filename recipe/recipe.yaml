@@ -1,14 +1,14 @@
 context:
   name: csp-bot
-  version: "1.0.0"
+  version: "1.1.0"
 
 package:
   name: ${{ name|lower }}
   version: ${{ version }}
 
 source:
-    url: https://pypi.org/packages/source/c/csp-bot/csp_bot-${{ version }}.tar.gz
-    sha256: 71fb4f5da144d5a7e6059876226e4ddb7e6a4cc6b570b348bbb473d00278f7cf
+  url: https://pypi.org/packages/source/c/csp-bot/csp_bot-${{ version }}.tar.gz
+  sha256: d41be6f213e6c06749f647a9335f9f2f77fe998d8fc45ddd0d56e2e61b65a2d7
 
 build:
   number: 0
@@ -23,10 +23,10 @@ requirements:
   run:
     - python >=${{ python_min }}
     - beautifulsoup4
-    - ccflow
+    - ccflow >=0.5.2
     - croniter
-    - csp
-    - csp-gateway
+    - csp >=0.9,<1
+    - csp-gateway >=2,<3
     - csp-adapter-discord
     - csp-adapter-slack
     - csp-adapter-symphony
