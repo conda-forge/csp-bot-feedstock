@@ -23,10 +23,10 @@ requirements:
   run:
     - python >=${{ python_min }}
     - beautifulsoup4
-    - ccflow
+    - ccflow >=0.5.2
     - croniter
-    - csp
-    - csp-gateway
+    - csp >=0.9,<1
+    - csp-gateway >=2,<3
     - csp-adapter-discord
     - csp-adapter-slack
     - csp-adapter-symphony
