@@ -1,6 +1,6 @@
 context:
   name: csp-bot
-  version: "1.1.0"
+  version: "2.0.0"
 
 package:
   name: ${{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/c/csp-bot/csp_bot-${{ version }}.tar.gz
-  sha256: d41be6f213e6c06749f647a9335f9f2f77fe998d8fc45ddd0d56e2e61b65a2d7
+  sha256: 388ed594af0686a1031e249233bb7d6d86f3f33cec3291c1e8e0fd3e0917ecb4
 
 build:
   number: 0
