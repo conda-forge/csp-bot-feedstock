@@ -12,7 +12,7 @@ source:
   sha256: b864c732454c1c0d57e5c2d4dc6a1b2fa5cff934db4f19f2b363c51152f4aa83
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: python -m pip install . -vv --no-deps --no-build-isolation
 
@@ -28,7 +28,7 @@ requirements:
     - chatom >=0.2.0
     - croniter
     - csp >=0.9,<1
-    - csp-gateway >=2.5,<2.7
+    - csp-gateway >=2.5,<3
     - csp-adapter-discord
     - csp-adapter-slack
     - csp-adapter-symphony
